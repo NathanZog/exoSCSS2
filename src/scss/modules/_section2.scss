@@ -4,23 +4,121 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    padding-bottom: 40px;
     .container{
         display: flex;
-        border: red solid 1px;
         width: 66%;
         .divtxt{
+            margin-top: 50px;
             display: block;
-            width: 45%;
+            width: 50%;
+            h1{
+                font-weight: bolder;
+                margin-bottom: 0;
+            }
         }
         .divimg{
             display: flex;
             justify-content: center;
-            width: 50%;
+            align-items: center;
             .img{
-                height: 400px;
-                width:400px;
                 border-radius: 50%;
             }
+        }
+    }
+    .container2{
+        display: flex;
+        width: 66%;
+        justify-content: space-evenly;
+        .divtxt2{
+            margin-top: 50px;
+            display: block;
+            width: 60%;
+            h1{
+                font-weight: bolder;
+                margin-bottom: 0;
+            }
+        }
+        .divimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img2{
+                border-radius: 50%;
+            }
+        }
+    }
+}
+/* responsivity */
+@media(max-width:655px){
+    .divimg{
+        .img{
+        margin-left: 40px;
+        height: 150px;
+        width: 150px;
+        }
+        .img2{
+            margin-right: 40px;
+            height: 150px;
+            width: 150px;
+        }
+    }
+}
+@media (min-width:656px) and (max-width:1007px){
+    .divtxt{
+        h1{
+            font-style: 35px;
+        }
+    }
+    .divtxt2{
+        margin-left: 60px;
+    }
+    .divimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img{
+            margin-left: 50px;
+        height: 200px;
+        width: 200px;
+        }
+        .img2{
+            margin-right: 50px;
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+@media (min-width:1008px){
+    .divtxt{
+        width: 50%;
+        margin-left: 25px;
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .divtxt2{
+        h1{
+            font-size: 35px;
+        }
+    }
+    .divimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        .img{
+            margin-left: 40px;
+            height: 400px;
+            width:400px;
+        }
+        .img2{
+            margin-right: 80px;
+            height: 400px;
+            width: 400px;
         }
     }
 }
